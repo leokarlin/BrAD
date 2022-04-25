@@ -1,4 +1,4 @@
-# BrAD
+# Unsupervised Domain Generalization by Learning a Bridge Across Domains
 The official code of the CVPR 2022 paper:
 **Unsupervised Domain Generalization by Learning a Bridge Across Domains**
 *Authors:* Sivan Harary, Eli Schwartz, Assaf Arbelle, Peter Staar, Shady Abu-Hussein, Elad Amrani, Roei Herzig, Amit Alfassy, Raja Giryes, Hilde Kuehne, Dina Katabi, Kate Saenko, Rogerio Feris, Leonid Karlinsky
@@ -6,14 +6,14 @@ The official code of the CVPR 2022 paper:
 https://arxiv.org/abs/2112.02300
 
 
-# Installation
-## Install Anaconda
-## Create Environment
+## Installation
+### Install Anaconda
+### Create Environment
 ```shell
 conda env create -f conda_env.yml
 conda activate brad
 ```
-## Full list of dependencies:
+### Full list of dependencies:
 In case there are any problems installing the conda environment as describes above, the following is a full list of all 
 dependecies need to run the training, testing and demo
 1. pytorch (version ~ 1.8) and the corresponding torchvision
@@ -24,13 +24,13 @@ dependecies need to run the training, testing and demo
 1. jupyterlab (for demo)
 1. ipywidgets (for demo)
 
-# Data Prep
+## Data Prep
 Please see [data_split/DATA_README.m](data_split/DATA_README.md)
 
-# Downloading our pre-trained models
+## Downloading our pre-trained models
 The model can be downloaded from: `https://drive.google.com/file/d/1T7v2xwAWQGsAv11-CEwKLmUH-TmCkue9/view?usp=sharing`
 
-# Run Training
+## Run Training
 To run our model first activate the conda environment:
 ```shell
 conda activate brad
@@ -45,7 +45,7 @@ Please see the config.py file for all available parameters or run:
 python main_brad.py -h
 ```
 
-# Run Test
+## Run Test
 To run our model first activate the conda environment:
 ```shell
 conda activate brad
@@ -64,8 +64,7 @@ Use the flag --classifier to choose classifier type out of [retrieval, sgd, logi
   
  
 
-# Run Demo
-## Initial setup
+## Run Demo
 1. Make sure that the conda environment is set properly
 1. Download the DomainNet Dataset
 1. Download the pre-calculated features from https://drive.google.com/drive/folders/1OvowfDCNCxPCAgaOi0nVDEpiB3AF2Uut?usp=sharing
